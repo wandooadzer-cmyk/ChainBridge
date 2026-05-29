@@ -5,7 +5,7 @@
   "description": "Real-time ChainBridge orderbook watcher using @chainbridge/sdk",
   "type": "module",
   "scripts": {
-    "start": "tsx index.ts"
+    "start": "node init && tsx index.ts"
   },
   "dependencies": {
     "@chainbridge/sdk": "^0.1.0"

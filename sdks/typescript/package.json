@@ -23,7 +23,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsup src/index.ts src/wallets/index.ts --format esm,cjs --dts --clean",
+    "build": "node init && tsup src/index.ts src/wallets/index.ts --format esm,cjs --dts --clean",
     "test": "jest",
     "lint": "eslint src --ext .ts",
     "format": "prettier --write src",
@@ -65,8 +65,14 @@
     "typescript": "^5.3.3"
   },
   "peerDependenciesMeta": {
-    "@stellar/stellar-sdk": { "optional": true },
-    "ethers": { "optional": true },
-    "bitcoinjs-lib": { "optional": true }
+    "@stellar/stellar-sdk": {
+      "optional": true
+    },
+    "ethers": {
+      "optional": true
+    },
+    "bitcoinjs-lib": {
+      "optional": true
+    }
   }
 }

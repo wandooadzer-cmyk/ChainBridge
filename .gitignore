@@ -7,7 +7,6 @@ Cargo.lock
 **/*.rs.bk
 
 # IDE
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -20,8 +19,6 @@ build/
 dist/
 
 # Environment
-.env
-.env.local
 .env.development.local
 .env.test.local
 .env.production.local
@@ -65,3 +62,4 @@ pr.md.venv/
 
 *storybook.log
 storybook-static
+config.bat
